@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProveApp</string>
+
+    <string name="register_underline"><u>REGISTRATE!</u></string>
+</resources>

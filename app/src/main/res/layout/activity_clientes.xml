@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.proveapp.proveapp.Activity.ClientesActivity"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="Ingrese Registro"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtNomCliente"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/CampoAcentoColor"
+            android:paddingStart="15dp"
+            android:inputType="text"
+            android:hint="Nombre Completo"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@drawable/custom_input"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtCedCliente"
+            android:layout_width="300dp"
+            android:paddingStart="15dp"
+            android:layout_height="wrap_content"
+            android:hint="Cedula"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnRegistrarseCliente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_secundary_button"
+        android:onClick="registro"
+        android:text="registrarse"
+
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

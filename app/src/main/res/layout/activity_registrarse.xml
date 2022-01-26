@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Activity.RegistrarseActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/prueba">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="20dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/txtTitulo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:gravity="center"
+               android:textStyle="bold"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="25dp"/>
+
+           <TableLayout
+               android:id="@+id/tabla"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginLeft="40dp"
+               android:stretchColumns="*"/>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+    <TableLayout
+        android:id="@+id/prueba"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/btnProcesarAstro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/custom_secundary_button"
+                android:text="Registrarse"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <!--android:background="#007C30"-->
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
